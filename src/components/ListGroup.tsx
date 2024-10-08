@@ -1,11 +1,18 @@
 
 export default function ListGroup() {
+  const items=[
+    'New York',
+    'San Francisco',
+    'Tokyo',
+    'London',
+    'Paris'
+  ];
   return (
     <div>
         <h1>List</h1>
+
         <ul className="list-group">
-            <li className="list-group-item">First</li>
-            <li className="list-group-item">Second</li>
+           {items.map((item)=><li>{item}</li>)}
         </ul>
     </div>
   )
